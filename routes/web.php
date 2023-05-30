@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('/login', [CostumAuthController::class, 'login']);
 Route::get('/registration', [CostumAuthController::class, 'registration']);
+Route::post('/register-user', [CostumAuthController::class, 'registerUser'])->name('register-user');
